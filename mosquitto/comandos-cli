@@ -1,0 +1,2 @@
+mosquitto_pub -h 127.0.0.1 -p 1883 -t "compras/notificacion" -m "{ destinatario: 'neider.smith1@gmail.com', asunto: 'Prueba', cuerpo: 'Este es el cuerpo de la prueba'}"
+mosquitto_sub -h 127.0.0.1 -p 1883 -t "compras/notificacion" -v
